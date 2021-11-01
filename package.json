@@ -1,0 +1,29 @@
+{
+  "name": "gql",
+  "version": "1.0.0",
+  "description": "For practicing GraphQL",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --exec babel-node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoonjoo-park/graphql.git"
+  },
+  "author": "hoonjoo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hoonjoo-park/graphql/issues"
+  },
+  "homepage": "https://github.com/hoonjoo-park/graphql#readme",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "graphql-yoga": "^1.18.3",
+    "nodemon": "^2.0.14"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/node": "^7.16.0",
+    "@babel/preset-env": "^7.16.0"
+  }
+}
