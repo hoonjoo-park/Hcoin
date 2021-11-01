@@ -1,0 +1,17 @@
+type Coin {
+  id: String!
+  name: String!
+  symbol: String!
+  rank: Int!
+  quotes: Quotes
+}
+type Quotes {
+  USD: USD
+}
+type USD {
+  price: Float!
+}
+type Query {
+  coins: [Coin]!
+  coin(id: String!): Coin
+}
