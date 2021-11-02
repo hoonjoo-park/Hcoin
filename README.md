@@ -1,7 +1,9 @@
-# GraphQL
-GraphQL 연습
+# 🪙 Hcoin
+GraphQL을 활용한 가상화폐 정보 확인 SPA
 
-1. Yoga 🧘
-2. Query
-3. Resolver
-4. Mutation
+1. React
+2. Apollo
+3. GQL Yoga 🧘
+4. Query
+5. Resolver
+6. Mutation
