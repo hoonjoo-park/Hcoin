@@ -9,9 +9,9 @@ type Quotes {
   USD: USD
 }
 type USD {
-  price: Float!
+  price: Float
 }
 type Query {
   coins: [Coin]!
-  coin(id: String!): Coin
+  coin(id: String!): Coin!
 }

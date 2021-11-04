@@ -6,6 +6,6 @@ export const getCoins = async () => {
   return data;
 };
 export const getCoin = async (id) => {
-  const { data: data } = await axios(BASE_URL + `/tickers/${id}`);
+  const { data: data } = await axios(BASE_URL + `/coins/${id}`);
   return data;
 };
