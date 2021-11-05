@@ -1,11 +1,15 @@
 import axios from 'axios';
-const BASE_URL = 'https://api.coinpaprika.com/v1';
+const BASE_URL = 'https://api.coincap.io/v2';
 
-export const getCoins = async () => {
-  const { data: data } = await axios(BASE_URL + '/tickers');
+export const getCoins = async (limit = 100) => {
+  const {
+    data: { data: data },
+  } = await axios(BASE_URL + `/assets?limit=${limit}`);
   return data;
 };
 export const getCoin = async (id) => {
-  const { data: data } = await axios(BASE_URL + `/coins/${id}`);
+  const {
+    data: { data: data },
+  } = await axios(BASE_URL + `/assets/${id}`);
   return data;
 };

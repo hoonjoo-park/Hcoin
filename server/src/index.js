@@ -2,23 +2,19 @@ import { GraphQLServer } from 'graphql-yoga';
 import resolvers from './graphql/resolvers';
 
 const server = new GraphQLServer({
-  typeDefs: `type Coin{
-        id: String!
-        name: String!
-        symbol: String!
-        rank: Int!
-        quotes: Quotes
-    }
-    type Quotes {
-        USD: USD
-      }
-      type USD {
-        price: Float!
-      }
-    type Query {
-        coins: [Coin]!
-        coin(id: String!): Coin
-      }`,
+  typeDefs: `type Coin {
+    id: String!
+    rank: String!
+    symbol: String!
+    name: String!
+    priceUsd: String
+    changePercent24Hr: String
+    volumeUsd24Hr: String
+  }
+  type Query {
+    coins(limit: Int): [Coin]!
+    coin(id: String!): Coin!
+  }`,
   resolvers,
 });
 

@@ -1,12 +1,15 @@
 import { gql } from '@apollo/client';
 
 export const GET_COINS = gql`
-  query getCoins {
-    coins {
+  query getCoins($limit: Int) {
+    coins(limit: $limit) {
       id
-      name
-      symbol
       rank
+      symbol
+      name
+      priceUsd
+      changePercent24Hr
+      volumeUsd24Hr
     }
   }
 `;

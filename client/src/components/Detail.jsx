@@ -1,6 +1,6 @@
 import React from 'react';
 import { useQuery } from '@apollo/client';
-import { GET_COIN } from './queries';
+import { GET_COIN } from '../queries';
 
 function Detail({ match }) {
   const {

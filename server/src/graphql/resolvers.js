@@ -2,7 +2,7 @@ import { getCoins, getCoin } from './db';
 
 const resolvers = {
   Query: {
-    coins: (_, {}) => getCoins(),
+    coins: (_, { limit }) => getCoins(limit),
     coin: (_, { id }) => getCoin(id),
   },
 };
