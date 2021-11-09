@@ -21,6 +21,9 @@ export const GET_COIN = gql`
       name
       symbol
       rank
+      priceUsd
+      changePercent24Hr
+      volumeUsd24Hr
     }
   }
 `;
