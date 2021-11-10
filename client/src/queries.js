@@ -27,3 +27,13 @@ export const GET_COIN = gql`
     }
   }
 `;
+
+export const GET_MARKETS = gql`
+  query getMarkets {
+    markets {
+      exchangeId
+      name
+      rank
+    }
+  }
+`;

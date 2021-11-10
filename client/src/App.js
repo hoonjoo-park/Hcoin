@@ -6,6 +6,7 @@ import Home from './components/Home';
 import Detail from './components/Detail';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Market from './components/Market';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Switch>
             <Route path={'/'} exact component={Home} />
             <Route path={'/coin/:id'} exact component={Detail} />
+            <Route path={'/market'} exact component={Market} />
           </Switch>
           <Footer />
         </>

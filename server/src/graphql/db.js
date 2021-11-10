@@ -13,3 +13,10 @@ export const getCoin = async (id) => {
   } = await axios(BASE_URL + `/assets/${id}`);
   return data;
 };
+
+export const getMarkets = async () => {
+  const {
+    data: { data: data },
+  } = await axios(BASE_URL + `/exchanges`);
+  return data;
+};

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 import { GET_COINS } from '../queries';
@@ -6,7 +6,7 @@ import styled from 'styled-components';
 import Loading from './Loading';
 
 function Home() {
-  const { loading, error, data, refetch } = useQuery(GET_COINS);
+  const { loading, error, data } = useQuery(GET_COINS);
   if (loading) return <Loading />;
   if (error) return window.location.reload();
   return (

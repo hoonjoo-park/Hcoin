@@ -72,12 +72,11 @@ const DetailBox = styled.div`
   height: 40vh;
   max-height: 800px;
   padding: 2em;
-  background-color: rgba(65, 81, 166, 0.9);
+  background-color: #ffffff;
   border-radius: 25px;
   box-shadow: 0px 2px 6px 0px rgb(0 0 0 / 55%);
   & > * {
     font-size: 1.5rem;
-    color: #ffffff;
   }
   & > h3 {
     text-align: center;
@@ -101,8 +100,8 @@ const SubDetailBox = styled.div`
     width: 20%;
     height: 60%;
     font-size: 1rem;
-    background-color: rgba(249, 247, 247, 0.9);
-    color: #373d4d;
+    background-color: rgba(65, 81, 166, 0.9);
+    color: #ffffff;
     font-weight: 600;
     box-shadow: 0px 2px 6px 0px rgb(0 0 0 / 55%);
   }

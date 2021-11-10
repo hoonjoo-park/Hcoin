@@ -11,9 +11,15 @@ const server = new GraphQLServer({
     changePercent24Hr: String
     volumeUsd24Hr: String
   }
+  type Market {
+    exchangeId: String!
+    name: String!
+    rank: String!
+  }
   type Query {
     coins(limit: Int): [Coin]!
     coin(id: String!): Coin!
+    markets: [Market]!
   }`,
   resolvers,
 });
